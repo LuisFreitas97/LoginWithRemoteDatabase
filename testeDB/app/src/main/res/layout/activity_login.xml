@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.luis.testedb.login">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/loginIdText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="111dp" />
+
+        <TextView
+            android:id="@+id/labelLoginPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/labelLoginId"
+            android:layout_alignStart="@+id/labelLoginId"
+            android:layout_below="@+id/loginIdText"
+            android:layout_marginTop="62dp"
+            android:text="Password" />
+
+        <TextView
+            android:id="@+id/labelInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonRegisto"
+            android:layout_alignLeft="@+id/labelLoginId"
+            android:layout_alignStart="@+id/labelLoginId"
+            android:layout_marginBottom="14dp"
+            android:text="Se não tem conta registe-se:" />
+
+        <TextView
+            android:id="@+id/labelLoginId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="67dp"
+            android:text="Id" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/labelInfo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/buttonRegisto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonLogin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/buttonLogin"
+            android:text="Registar" />
+
+        <EditText
+            android:id="@+id/editTextPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/labelLoginPass"
+            android:layout_marginTop="42dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+</RelativeLayout>
